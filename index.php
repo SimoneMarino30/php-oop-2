@@ -1,8 +1,4 @@
 <?php 
-
-require_once __DIR__ . "/models/food.php";
-// require_once __DIR__ . "/models/toy.php";
-// require_once __DIR__ . "/models/kennel.php";
 class Category {
     public $type_of_animal;
 
@@ -59,32 +55,12 @@ class Product {
 </head>
 
 <body>
-    <section class="container">
-        <div class="card m-5" style="width: 18rem;">
-            <img src="<?= $dog_food->image ?>" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h3 class="card-title"><?= $dog_food->name ?></h3>
-                <h5 class="card-title"><?= $dog_food->brand ?></h5>
-                <ul>
-                    <li class="card-text">
-                        Prezzo: <?= $dog_food->price ?>€
-                    </li>
-                    <li class="card-text">
-                        Disponibilità: <?= $dog_food->avaibility ?> pezzi
-                    </li>
-                    <li class="card-text">
-                        Categoria: ...<?= $dog_food->avaibility ?>
-                    </li>
-                </ul>
+    <div class="container d-flex flex-wrap">
+        <?php require_once __DIR__ . "/models/food.php"; ?>
+        <?php require_once __DIR__ . "/models/kennel.php"; ?>
+        <?php require_once __DIR__ . "/models/toy.php"; ?>
+    </div>
 
-
-                <a href="#" class="btn btn-primary">
-                    <span>Acquista ora</span>
-                    <i class="fa-solid fa-cart-arrow-down"></i>
-                </a>
-            </div>
-        </div>
-    </section>
 
 </body>
 
