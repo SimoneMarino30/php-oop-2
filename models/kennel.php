@@ -21,6 +21,6 @@ class Kennel extends Product  {
 $dog_kennel = new Toy ("Royal Canin", 100, true, new Category("dog"), "legno",  "xl");
 $cat_kennel = new Toy ("Felix", 75, true, new Category("cat"), "wool", "md");
 
-var_dump($dog_kennel);
-var_dump($cat_kennel);
+// var_dump($dog_kennel);
+// var_dump($cat_kennel);
 ?>

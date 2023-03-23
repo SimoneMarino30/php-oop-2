@@ -21,7 +21,7 @@ class Toy extends Product  {
 $dog_toy = new Toy ("Royal Canin", 5, true, new Category("dog"), "pallina",  "red");
 $cat_toy = new Toy ("Felix", 15, true, new Category("cat"), "Topo meccanico", "grigio");
 
-var_dump($dog_toy);
-var_dump($cat_toy);
+// var_dump($dog_toy);
+// var_dump($cat_toy);
 
 // ?>
